@@ -21,13 +21,13 @@
   ],
   "require": {
     "php": "^8.0",
-    "guzzlehttp/guzzle": "^7.5"
+    "guzzlehttp/guzzle": "^7.5",
+    "sebastian/diff": "^6.0",
+    "inhere/console": "^4.1"
   },
   "require-dev": {
     "pestphp/pest": "^2.30",
-    "inhere/console": "^4.1",
-    "mockery/mockery": "^1.6",
-    "sebastian/diff": "^6.0"
+    "mockery/mockery": "^1.6"
   },
   "autoload": {
     "psr-4": {
