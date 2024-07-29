@@ -19,8 +19,9 @@
 
 ## 项目地址
 
-- **github** https://.git
-- **gitee** https://.git
+- **github** https://github.com/ayang9999/api
+
+- **gitee** https://gitee.com/luyoujing/api
 
 ## 快速安装
 
