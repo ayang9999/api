@@ -74,7 +74,7 @@ $display->listApi();//列出全部 api
 $maker->makeAll(); //生成文档
 $maker->makeOne("GET", "/getInfo"); //生成或者覆盖指定单个接口
 
-$display->printLog();//显示生成api变化细节
+$display->printLog();//文档变化的接口
 
 $maker2 = new \Ayang\ApiManager\Doc\documentMaker($apiList, new \Ayang\ApiManager\Display\Format\markdownFormat(), $dir, $cateFile);
 
