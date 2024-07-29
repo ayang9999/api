@@ -9,7 +9,7 @@
 ## 预览效果
 ![默认md效果预览](./docs/images/docMd.png)
 
-## 生成的文档 见 ./docs/apis
+## [api document](./docs/apis)
 
 
 ## 功能概览
@@ -73,18 +73,37 @@ $display->listApi();//列出全部 api
 
 $maker->makeAll(); //生成文档
 $maker->makeOne("GET", "/getInfo"); //生成或者覆盖指定单个接口
+$maker->makeCategoryFile();// 生成导航文件
 
-$display->printLog();//文档变化的接口
+$display->printLog();//显示文档变化的接口
+
+```
+![](./docs/images/new.png)
+
+- 注解修改
+
+```php
+
+class userController
+{
+    #[api(name:"获取用户信息", path: "/getInfo", method: "get", desc: "返回参考保存用户信息字段", category: "用户信息")]
+    #[param("userId", "int", '用户id', true)]
+    #[respField("real_status", "bool", "实名认证 0未提交1审核中2通过3拒绝")]
+    #[request(['userId' => 1], right: false)]
+    #[response('{"name":"小明"}')]
+    public function getInfo()
+    {
+    }
+}
 
 $maker2 = new \Ayang\ApiManager\Doc\documentMaker($apiList, new \Ayang\ApiManager\Display\Format\markdownFormat(), $dir, $cateFile);
 
 $maker2->showChange();
 $display = new \Ayang\ApiManager\display($maker2);
 $display->printLog();//检查注解变化的接口
-$maker2->makeCategoryFile();// 生成导航文件
+
 ```
-
-
+![](./docs/images/check.png)
 - 根据注解发起http请求
 
 ```php
@@ -103,13 +122,6 @@ $display = new \Ayang\ApiManager\display($maker);
 $display->printLog();//文档变化的接口
 ```
 
-##  命令行显示
-```php
-$maker->showChange();  
-$display->listApi();
-```
-![api列表](./docs/images/list.png)
-![api变动](./docs/images/changeLog.png)
 ## 依赖包
 
 - [inhere/console](https://github.com/inhere/php-console)
