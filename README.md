@@ -65,20 +65,23 @@ class userController
 $dir = "/tmp/aYangDocTest"; //文档目录
 $cateFile = "/tmp/aYangDocTest/cate.md"; //文档导航
 
-$apiList = apiEntity::getByClass(\Ayang\ApiManager\Test\example\userController::class);
+$apiList = \Ayang\ApiManager\apiEntity::getByClass(\Ayang\ApiManager\Test\example\userController::class);
 $maker = new \Ayang\ApiManager\Doc\documentMaker($apiList, new \Ayang\ApiManager\Display\Format\markdownFormat(), $dir, $cateFile);
+$display = new \Ayang\ApiManager\display($maker);
 
 $display->listApi();//列出全部 api
 
 $maker->makeAll(); //生成文档
 $maker->makeOne("GET", "/getInfo"); //生成或者覆盖指定单个接口
-$display = new \Ayang\ApiManager\display($maker);
+
 $display->printLog();//显示生成api变化细节
 
-$maker->showChange();
+$maker2 = new \Ayang\ApiManager\Doc\documentMaker($apiList, new \Ayang\ApiManager\Display\Format\markdownFormat(), $dir, $cateFile);
 
-$maker->showChange();$display->printLog();//检查注解变化的接口
-$maker->makeCategoryFile();// 生成导航文件
+$maker2->showChange();
+$display = new \Ayang\ApiManager\display($maker2);
+$display->printLog();//检查注解变化的接口
+$maker2->makeCategoryFile();// 生成导航文件
 ```
 
 
@@ -96,6 +99,8 @@ $guzzleClient = new GuzzleHttp\Client();
 $apiClient = new \Ayang\ApiManager\apiClient($guzzleClient);
 $maker->setApiClient($apiClient);
 $maker->makeAll();//or $maker->makeOne("GET", "/getInfo");
+$display = new \Ayang\ApiManager\display($maker);
+$display->printLog();//文档变化的接口
 ```
 
 ##  命令行显示
