@@ -1,0 +1,141 @@
+{
+    "GET \/get": {
+        "base_content": "### 获取用户信息\n    返回参考保存用户信息字段\n#### 路由 \n    \/get GET\n#### 请求参数说明\n| 字段   | 类型  | 是否必填 | 说明 |\n|:-----|:----|:-----|----|\n\n#### 返回参数说明 \n| 字段   | 类型  | 说明 |\n|:-----|:----|----|\n|real_status|bool|实名认证 0未提交1审核中2通过3拒绝|\n|education_status|bool|学历认证 0未提交1审核中2通过3拒绝|\n|work_status|bool|company认证 0未提交1审核中2通过3拒绝|\n|activity|string|活跃度|\n|is_reg|bool|是否注册|\n\n#### 请求实例\n\n\n#### 响应实例\n",
+        "file": "\/tmp\/aYangDocTest\/用户信息\/获取用户信息.md",
+        "name": "获取用户信息",
+        "requestList": [
+            {
+                "request": [],
+                "headers": [],
+                "method": null,
+                "needRequest": true,
+                "url": null,
+                "right": true,
+                "respRules": null
+            }
+        ],
+        "responseList": [
+            {
+                "body": "{\n    \"code\": 0\n}",
+                "status": 200,
+                "headers": []
+            }
+        ]
+    },
+    "POST \/save": {
+        "base_content": "### 保存用户信息\n    \n#### 路由 \n    \/save POST\n#### 请求参数说明\n| 字段   | 类型  | 是否必填 | 说明 |\n|:-----|:----|:-----|----|\n|head_img|string|否||\n|sex|string|否|m男f女null未知|\n|birthday|string|否||\n|nike_name|string|否||\n|wechat_account|string|否|微信号|\n|phone|string|否||\n|city|string|否||\n|region|string|否|区域|\n|age|int|否||\n|height|int|否||\n|weight|int|否||\n|native|string|否|户籍|\n|school|string|否|学校|\n|company|string|否|公司|\n|education|string|否|学历|\n|career|string|否|职业|\n|constellation|string|否|星座|\n|salary|string|否|年薪|\n|love_state|string|否|恋爱状态|\n|is_graduate|bool|否|1毕业0在读|\n|introduction|string|否|自我描述|\n|interest|string|否|兴趣爱好|\n|about_half|string|否|关于另一半|\n|background|string|否|家庭背景|\n|point_of_love|string|否|爱情观点|\n|album|string|否|相册|\n|marital_state|string|否|婚姻状况|\n|tags|string|否|标签|\n|unlock_condition|string|否|解锁条件|\n#### 返回参数说明 \n| 字段   | 类型  | 说明 |\n|:-----|:----|----|\n\n\n#### 请求实例\n```json\n{\n    \"nike_name\": \"遇见二狗\",\n    \"head_img\": \"http:\\\/\\\/just-love.oss-cn-shanghai.aliyuncs.com\\\/face\\\/1\\\/664652c92d47c\",\n    \"phone\": \"17521161690\",\n    \"city\": \"上海\",\n    \"region\": \"嘉定\",\n    \"age\": \"20\",\n    \"height\": \"100\",\n    \"weight\": \"100\",\n    \"birthday\": \"2002-10-10\",\n    \"sex\": \"m\",\n    \"native\": \"江苏\",\n    \"school\": \"家里蹲大学\",\n    \"company\": \"又焦又虑\",\n    \"education\": \"博士\",\n    \"career\": \"职业\",\n    \"constellation\": \"金牛\",\n    \"salary\": \"100万\",\n    \"love_state\": \"单身\",\n    \"is_graduate\": \"1\",\n    \"introduction\": \"自我描述\",\n    \"interest\": \"兴趣爱好\",\n    \"about_half\": \"关于另一半\",\n    \"background\": \"我的家庭背景\",\n    \"point_of_love\": \"我的爱情观点\",\n    \"unlock_condition\": {\n        \"education\": [\n            \"zhaunke\"\n        ],\n        \"birthday\": [\n            \"2018\",\n            \"2019\"\n        ],\n        \"height\": [\n            170,\n            190\n        ]\n    },\n    \"marital_state\": \"未婚\",\n    \"tags\": [\n        \"吃饭\",\n        \"睡觉\",\n        \"打豆豆\"\n    ]\n}\n```\n\n#### 响应实例\n",
+        "file": "\/tmp\/aYangDocTest\/用户信息\/保存用户信息.md",
+        "name": "保存用户信息",
+        "requestList": [
+            {
+                "request": {
+                    "nike_name": "遇见二狗",
+                    "head_img": "http:\/\/just-love.oss-cn-shanghai.aliyuncs.com\/face\/1\/664652c92d47c",
+                    "phone": "17521161690",
+                    "city": "上海",
+                    "region": "嘉定",
+                    "age": "20",
+                    "height": "100",
+                    "weight": "100",
+                    "birthday": "2002-10-10",
+                    "sex": "m",
+                    "native": "江苏",
+                    "school": "家里蹲大学",
+                    "company": "又焦又虑",
+                    "education": "博士",
+                    "career": "职业",
+                    "constellation": "金牛",
+                    "salary": "100万",
+                    "love_state": "单身",
+                    "is_graduate": "1",
+                    "introduction": "自我描述",
+                    "interest": "兴趣爱好",
+                    "about_half": "关于另一半",
+                    "background": "我的家庭背景",
+                    "point_of_love": "我的爱情观点",
+                    "unlock_condition": {
+                        "education": [
+                            "zhaunke"
+                        ],
+                        "birthday": [
+                            "2018",
+                            "2019"
+                        ],
+                        "height": [
+                            170,
+                            190
+                        ]
+                    },
+                    "marital_state": "未婚",
+                    "tags": [
+                        "吃饭",
+                        "睡觉",
+                        "打豆豆"
+                    ]
+                },
+                "headers": [],
+                "method": null,
+                "needRequest": true,
+                "url": null,
+                "right": true,
+                "respRules": null
+            }
+        ],
+        "responseList": [
+            {
+                "body": "{\n    \"code\": 0\n}",
+                "status": 200,
+                "headers": []
+            }
+        ]
+    },
+    "PUT \/phone": {
+        "base_content": "### 保存用户手机号\n    保存用户手机号\n#### 路由 \n    \/phone PUT\n#### 请求参数说明\n| 字段   | 类型  | 是否必填 | 说明 |\n|:-----|:----|:-----|----|\n|code|string|否|code|\n#### 返回参数说明 \n| 字段   | 类型  | 说明 |\n|:-----|:----|----|\n\n\n#### 请求实例\n```json\n{\n    \"code\": \"f65ca51a3fe79fcccdbde3593ea8d5f09e66f1ad418b02a13b728656b5bf7839\"\n}\n```\n\n#### 响应实例\n```json\n{\n    \"code\": 0\n}\n```",
+        "file": "\/tmp\/aYangDocTest\/用户信息\/保存用户手机号.md",
+        "name": "保存用户手机号",
+        "requestList": [
+            {
+                "request": {
+                    "code": "f65ca51a3fe79fcccdbde3593ea8d5f09e66f1ad418b02a13b728656b5bf7839"
+                },
+                "headers": [],
+                "method": null,
+                "needRequest": true,
+                "url": null,
+                "right": false,
+                "respRules": null
+            }
+        ],
+        "responseList": [
+            {
+                "body": "{\n    \"code\": 0\n}",
+                "status": 200,
+                "headers": []
+            },
+            {
+                "body": "{\n    \"code\": 0\n}",
+                "status": 400,
+                "headers": []
+            }
+        ]
+    },
+    "DELETE \/logout": {
+        "base_content": "### 注销用户\n    \n#### 路由 \n    \/logout DELETE\n#### 请求参数说明\n| 字段   | 类型  | 是否必填 | 说明 |\n|:-----|:----|:-----|----|\n\n#### 返回参数说明 \n| 字段   | 类型  | 说明 |\n|:-----|:----|----|\n\n\n#### 请求实例\n```json\n{\n    \"code\": \"f65ca51a3fe79fcccdbde3593ea8d5f09e66f1ad418b02a13b728656b5bf7839\"\n}\n```\n\n#### 响应实例\n",
+        "file": "\/tmp\/aYangDocTest\/用户信息\/注销用户.md",
+        "name": "注销用户",
+        "requestList": [
+            {
+                "request": {
+                    "code": "f65ca51a3fe79fcccdbde3593ea8d5f09e66f1ad418b02a13b728656b5bf7839"
+                },
+                "headers": [],
+                "method": null,
+                "needRequest": false,
+                "url": null,
+                "right": true,
+                "respRules": null
+            }
+        ],
+        "responseList": []
+    }
+}

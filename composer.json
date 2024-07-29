@@ -1,0 +1,47 @@
+{
+  "name": "ayang/api",
+  "description": "一个简单的使用注解生成api文档的库",
+  "type": "library",
+  "keywords": [
+    "php",
+    "api",
+    "doc",
+    "document",
+    "composer",
+    "annotation",
+    "cli",
+    "markdown"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "luyoujing",
+      "email": "2295698745@qq.com"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "guzzlehttp/guzzle": "^7.5"
+  },
+  "require-dev": {
+    "pestphp/pest": "^2.30",
+    "inhere/console": "^4.1",
+    "mockery/mockery": "^1.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ayang\\ApiManager\\": "src/",
+      "Ayang\\ApiManager\\Test\\": "test/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Ayang\\ApiManager\\Test\\": "test/"
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}

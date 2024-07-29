@@ -1,0 +1,33 @@
+{
+  "name": "toolkit/sys-utils",
+  "type": "library",
+  "description": "some system tool library of the php",
+  "keywords": [
+    "library",
+    "system",
+    "tool",
+    "php"
+  ],
+  "homepage": "https://github.com/php-toolkit/sys-utils",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "inhere",
+      "email": "in.798@qq.com",
+      "homepage": "https://github.com/inhere"
+    }
+  ],
+  "require": {
+    "php": ">8.0.0",
+    "toolkit/stdlib": "~2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Toolkit\\Sys\\": "src/"
+    }
+  },
+  "suggest": {
+    "toolkit/cli-utils": "useful cli tool library of the php",
+    "inhere/console": "a lightweight php console application library."
+  }
+}

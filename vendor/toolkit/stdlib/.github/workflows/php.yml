@@ -1,0 +1,42 @@
+name: Unit-Tests
+
+on: [push]
+
+jobs:
+  test:
+    name: Test on php ${{ matrix.php }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: true
+      matrix:
+        php: [8.1, 8.2] #
+#        os: [ubuntu-latest, macOS-latest] # windows-latest,
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # usage refer https://github.com/shivammathur/setup-php
+      - name: Setup PHP
+        timeout-minutes: 5
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php}}
+          tools: pecl, php-cs-fixer, phpunit # , phpunit-7.5
+          extensions: mbstring, dom, fileinfo, openssl, igbinary # , swoole-4.4.19 #optional, setup extensions
+          ini-values: post_max_size=56M, short_open_tag=On #optional, setup php.ini configuration
+          coverage: none #optional, setup coverage driver: xdebug, none
+
+      - name: Display Env
+        run: env
+
+      - name: Install dependencies
+        run: |
+          composer install --no-progress --no-suggest
+
+      # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
+      # Docs: https://getcomposer.org/doc/articles/scripts.md
+
+      - name: Run test suite
+        run: phpunit
