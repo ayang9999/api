@@ -49,7 +49,9 @@ it("文档列表", function () use ($dir) {
         ->and($maker->runtimeLog['api']['change'])->toBeArray()->toHaveCount(1)
         ->and($maker->runtimeLog['api']['del'])->toBeArray()->toHaveCount(2);
 
-})->skip();
+//    $display->printLog();
+
+});
 
 
 it("api请求", function () use ($dir) {
