@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5393e687d8a9e115ac1a6ed3196bea1e",
+    "content-hash": "49652a92230146a1bc784a06d4b1a2fe",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -332,6 +332,71 @@
             "time": "2024-07-18T11:15:46+00:00"
         },
         {
+            "name": "inhere/console",
+            "version": "v4.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/inhere/php-console.git",
+                "reference": "2742340c74efcdaf0687db532ff5193b198ef2d2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/inhere/php-console/zipball/2742340c74efcdaf0687db532ff5193b198ef2d2",
+                "reference": "2742340c74efcdaf0687db532ff5193b198ef2d2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">8.0.1",
+                "toolkit/cli-utils": "~2.0",
+                "toolkit/fsutil": "~2.0",
+                "toolkit/pflag": "~2.0",
+                "toolkit/stdlib": "^2.0",
+                "toolkit/sys-utils": "~2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.1"
+            },
+            "suggest": {
+                "padraic/phar-updater": "A thing to make PHAR self-updating easy and secure.",
+                "symfony/process": "php process operation",
+                "text/template": "Single-Class string template engine for PHP5/7 supporting if/loops/filters"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Inhere\\Console\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "https://github.com/inhere"
+                }
+            ],
+            "description": "php console library, provide console argument parse, console controller/command run, color style, user interactive, information show.",
+            "homepage": "https://github.com/inhere/php-console",
+            "keywords": [
+                "cli",
+                "color",
+                "command",
+                "command-line",
+                "console",
+                "console-application",
+                "console-color",
+                "phar"
+            ],
+            "support": {
+                "issues": "https://github.com/inhere/php-console/issues",
+                "source": "https://github.com/inhere/php-console/tree/v4.1.6"
+            },
+            "time": "2023-01-14T02:58:51+00:00"
+        },
+        {
             "name": "psr/http-client",
             "version": "1.0.3",
             "source": {
@@ -536,6 +601,73 @@
             "time": "2019-03-08T08:55:37+00:00"
         },
         {
+            "name": "sebastian/diff",
+            "version": "5.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/diff.git",
+                "reference": "c41e007b4b62af48218231d6c2275e4c9b975b2e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/c41e007b4b62af48218231d6c2275e4c9b975b2e",
+                "reference": "c41e007b4b62af48218231d6c2275e4c9b975b2e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^10.0",
+                "symfony/process": "^6.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "5.1-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian Bergmann",
+                    "email": "sebastian@phpunit.de"
+                },
+                {
+                    "name": "Kore Nordmann",
+                    "email": "mail@kore-nordmann.de"
+                }
+            ],
+            "description": "Diff implementation",
+            "homepage": "https://github.com/sebastianbergmann/diff",
+            "keywords": [
+                "diff",
+                "udiff",
+                "unidiff",
+                "unified diff"
+            ],
+            "support": {
+                "issues": "https://github.com/sebastianbergmann/diff/issues",
+                "security": "https://github.com/sebastianbergmann/diff/security/policy",
+                "source": "https://github.com/sebastianbergmann/diff/tree/5.1.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sebastianbergmann",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-03-02T07:15:17+00:00"
+        },
+        {
             "name": "symfony/deprecation-contracts",
             "version": "v3.5.0",
             "source": {
@@ -601,6 +733,274 @@
                 }
             ],
             "time": "2024-04-18T09:32:20+00:00"
+        },
+        {
+            "name": "toolkit/cli-utils",
+            "version": "v2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-toolkit/cli-utils.git",
+                "reference": "bc07930a1669372566d8bc9f521a57cc3bb5b499"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-toolkit/cli-utils/zipball/bc07930a1669372566d8bc9f521a57cc3bb5b499",
+                "reference": "bc07930a1669372566d8bc9f521a57cc3bb5b499",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">8.0.0"
+            },
+            "require-dev": {
+                "ext-posix": "*",
+                "ext-readline": "*"
+            },
+            "suggest": {
+                "inhere/console": "a lightweight php console application library.",
+                "toolkit/pflag": "Command line flag parse library of the php"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Toolkit\\Cli\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "http://github.com/inhere"
+                }
+            ],
+            "description": "useful cli tool library of the php",
+            "homepage": "https://github.com/php-toolkit/cli-utils",
+            "keywords": [
+                "cli",
+                "cli-color",
+                "command-line",
+                "library",
+                "php",
+                "tool"
+            ],
+            "support": {
+                "issues": "https://github.com/php-toolkit/cli-utils/issues",
+                "source": "https://github.com/php-toolkit/cli-utils/tree/v2.0.3"
+            },
+            "time": "2022-06-15T08:50:01+00:00"
+        },
+        {
+            "name": "toolkit/fsutil",
+            "version": "v2.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-toolkit/fsutil.git",
+                "reference": "ffee99a16fd533d17ff25dea53f6f3bf7aa9d9fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-toolkit/fsutil/zipball/ffee99a16fd533d17ff25dea53f6f3bf7aa9d9fc",
+                "reference": "ffee99a16fd533d17ff25dea53f6f3bf7aa9d9fc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0.1",
+                "toolkit/stdlib": "^2.0"
+            },
+            "suggest": {
+                "inhere/console": "a lightweight php console application library.",
+                "inhere/php-validate": "Very lightweight data validate tool"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Toolkit\\FsUtil\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "https://github.com/inhere"
+                }
+            ],
+            "description": "some file system tool library of the php",
+            "homepage": "https://github.com/php-toolkit/fsutil",
+            "keywords": [
+                "filesystem",
+                "library",
+                "php",
+                "tool"
+            ],
+            "support": {
+                "issues": "https://github.com/php-toolkit/fsutil/issues",
+                "source": "https://github.com/php-toolkit/fsutil/tree/v2.0.6"
+            },
+            "time": "2023-04-16T05:36:17+00:00"
+        },
+        {
+            "name": "toolkit/pflag",
+            "version": "v2.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-toolkit/pflag.git",
+                "reference": "6619dc82da0bd9a1253fb53af4338759fe170ae8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-toolkit/pflag/zipball/6619dc82da0bd9a1253fb53af4338759fe170ae8",
+                "reference": "6619dc82da0bd9a1253fb53af4338759fe170ae8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">8.0.0",
+                "toolkit/cli-utils": "~2.0",
+                "toolkit/stdlib": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Toolkit\\PFlag\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com"
+                }
+            ],
+            "description": "Command line flag parse library of the php",
+            "homepage": "https://github.com/php-toolkit/pflag",
+            "support": {
+                "issues": "https://github.com/php-toolkit/pflag/issues",
+                "source": "https://github.com/php-toolkit/pflag/tree/v2.0.6"
+            },
+            "time": "2022-11-05T13:50:01+00:00"
+        },
+        {
+            "name": "toolkit/stdlib",
+            "version": "v2.0.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-toolkit/stdlib.git",
+                "reference": "ebcac8bf315e1f05c0db80ac1bd22b457ffcdd81"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-toolkit/stdlib/zipball/ebcac8bf315e1f05c0db80ac1bd22b457ffcdd81",
+                "reference": "ebcac8bf315e1f05c0db80ac1bd22b457ffcdd81",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "psr/container": "^2.0"
+            },
+            "suggest": {
+                "inhere/php-validate": "Very lightweight data validate tool"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/func.php"
+                ],
+                "psr-4": {
+                    "Toolkit\\Stdlib\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "https://github.com/inhere/"
+                }
+            ],
+            "description": "some stdlib tool library of the php",
+            "homepage": "https://github.com/php-toolkit/stdlib",
+            "keywords": [
+                "array",
+                "library",
+                "object",
+                "php",
+                "string",
+                "tool"
+            ],
+            "support": {
+                "issues": "https://github.com/php-toolkit/stdlib/issues",
+                "source": "https://github.com/php-toolkit/stdlib/tree/v2.0.12"
+            },
+            "time": "2024-02-08T05:30:58+00:00"
+        },
+        {
+            "name": "toolkit/sys-utils",
+            "version": "v2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-toolkit/sys-utils.git",
+                "reference": "e9fd416502c34d4cf7014693c2bb87cc7e048817"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-toolkit/sys-utils/zipball/e9fd416502c34d4cf7014693c2bb87cc7e048817",
+                "reference": "e9fd416502c34d4cf7014693c2bb87cc7e048817",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">8.0.0",
+                "toolkit/stdlib": "~2.0"
+            },
+            "suggest": {
+                "inhere/console": "a lightweight php console application library.",
+                "toolkit/cli-utils": "useful cli tool library of the php"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Toolkit\\Sys\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "https://github.com/inhere"
+                }
+            ],
+            "description": "some system tool library of the php",
+            "homepage": "https://github.com/php-toolkit/sys-utils",
+            "keywords": [
+                "library",
+                "php",
+                "system",
+                "tool"
+            ],
+            "support": {
+                "issues": "https://github.com/php-toolkit/sys-utils/issues",
+                "source": "https://github.com/php-toolkit/sys-utils/tree/v2.0.5"
+            },
+            "time": "2022-12-02T06:16:07+00:00"
         }
     ],
     "packages-dev": [
@@ -927,71 +1327,6 @@
                 "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
             },
             "time": "2020-07-09T08:09:16+00:00"
-        },
-        {
-            "name": "inhere/console",
-            "version": "v4.1.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/inhere/php-console.git",
-                "reference": "2742340c74efcdaf0687db532ff5193b198ef2d2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/inhere/php-console/zipball/2742340c74efcdaf0687db532ff5193b198ef2d2",
-                "reference": "2742340c74efcdaf0687db532ff5193b198ef2d2",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">8.0.1",
-                "toolkit/cli-utils": "~2.0",
-                "toolkit/fsutil": "~2.0",
-                "toolkit/pflag": "~2.0",
-                "toolkit/stdlib": "^2.0",
-                "toolkit/sys-utils": "~2.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^9.1"
-            },
-            "suggest": {
-                "padraic/phar-updater": "A thing to make PHAR self-updating easy and secure.",
-                "symfony/process": "php process operation",
-                "text/template": "Single-Class string template engine for PHP5/7 supporting if/loops/filters"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Inhere\\Console\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "https://github.com/inhere"
-                }
-            ],
-            "description": "php console library, provide console argument parse, console controller/command run, color style, user interactive, information show.",
-            "homepage": "https://github.com/inhere/php-console",
-            "keywords": [
-                "cli",
-                "color",
-                "command",
-                "command-line",
-                "console",
-                "console-application",
-                "console-color",
-                "phar"
-            ],
-            "support": {
-                "issues": "https://github.com/inhere/php-console/issues",
-                "source": "https://github.com/inhere/php-console/tree/v4.1.6"
-            },
-            "time": "2023-01-14T02:58:51+00:00"
         },
         {
             "name": "jean85/pretty-package-versions",
@@ -2856,73 +3191,6 @@
             "time": "2023-12-21T08:37:17+00:00"
         },
         {
-            "name": "sebastian/diff",
-            "version": "5.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "c41e007b4b62af48218231d6c2275e4c9b975b2e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/c41e007b4b62af48218231d6c2275e4c9b975b2e",
-                "reference": "c41e007b4b62af48218231d6c2275e4c9b975b2e",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^10.0",
-                "symfony/process": "^6.4"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "5.1-dev"
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Sebastian Bergmann",
-                    "email": "sebastian@phpunit.de"
-                },
-                {
-                    "name": "Kore Nordmann",
-                    "email": "mail@kore-nordmann.de"
-                }
-            ],
-            "description": "Diff implementation",
-            "homepage": "https://github.com/sebastianbergmann/diff",
-            "keywords": [
-                "diff",
-                "udiff",
-                "unidiff",
-                "unified diff"
-            ],
-            "support": {
-                "issues": "https://github.com/sebastianbergmann/diff/issues",
-                "security": "https://github.com/sebastianbergmann/diff/security/policy",
-                "source": "https://github.com/sebastianbergmann/diff/tree/5.1.1"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/sebastianbergmann",
-                    "type": "github"
-                }
-            ],
-            "time": "2024-03-02T07:15:17+00:00"
-        },
-        {
             "name": "sebastian/environment",
             "version": "6.1.0",
             "source": {
@@ -4282,274 +4550,6 @@
                 }
             ],
             "time": "2024-03-03T12:36:25+00:00"
-        },
-        {
-            "name": "toolkit/cli-utils",
-            "version": "v2.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-toolkit/cli-utils.git",
-                "reference": "bc07930a1669372566d8bc9f521a57cc3bb5b499"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-toolkit/cli-utils/zipball/bc07930a1669372566d8bc9f521a57cc3bb5b499",
-                "reference": "bc07930a1669372566d8bc9f521a57cc3bb5b499",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">8.0.0"
-            },
-            "require-dev": {
-                "ext-posix": "*",
-                "ext-readline": "*"
-            },
-            "suggest": {
-                "inhere/console": "a lightweight php console application library.",
-                "toolkit/pflag": "Command line flag parse library of the php"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Toolkit\\Cli\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "http://github.com/inhere"
-                }
-            ],
-            "description": "useful cli tool library of the php",
-            "homepage": "https://github.com/php-toolkit/cli-utils",
-            "keywords": [
-                "cli",
-                "cli-color",
-                "command-line",
-                "library",
-                "php",
-                "tool"
-            ],
-            "support": {
-                "issues": "https://github.com/php-toolkit/cli-utils/issues",
-                "source": "https://github.com/php-toolkit/cli-utils/tree/v2.0.3"
-            },
-            "time": "2022-06-15T08:50:01+00:00"
-        },
-        {
-            "name": "toolkit/fsutil",
-            "version": "v2.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-toolkit/fsutil.git",
-                "reference": "ffee99a16fd533d17ff25dea53f6f3bf7aa9d9fc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-toolkit/fsutil/zipball/ffee99a16fd533d17ff25dea53f6f3bf7aa9d9fc",
-                "reference": "ffee99a16fd533d17ff25dea53f6f3bf7aa9d9fc",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.0.1",
-                "toolkit/stdlib": "^2.0"
-            },
-            "suggest": {
-                "inhere/console": "a lightweight php console application library.",
-                "inhere/php-validate": "Very lightweight data validate tool"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Toolkit\\FsUtil\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "https://github.com/inhere"
-                }
-            ],
-            "description": "some file system tool library of the php",
-            "homepage": "https://github.com/php-toolkit/fsutil",
-            "keywords": [
-                "filesystem",
-                "library",
-                "php",
-                "tool"
-            ],
-            "support": {
-                "issues": "https://github.com/php-toolkit/fsutil/issues",
-                "source": "https://github.com/php-toolkit/fsutil/tree/v2.0.6"
-            },
-            "time": "2023-04-16T05:36:17+00:00"
-        },
-        {
-            "name": "toolkit/pflag",
-            "version": "v2.0.6",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-toolkit/pflag.git",
-                "reference": "6619dc82da0bd9a1253fb53af4338759fe170ae8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-toolkit/pflag/zipball/6619dc82da0bd9a1253fb53af4338759fe170ae8",
-                "reference": "6619dc82da0bd9a1253fb53af4338759fe170ae8",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "php": ">8.0.0",
-                "toolkit/cli-utils": "~2.0",
-                "toolkit/stdlib": "~2.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Toolkit\\PFlag\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com"
-                }
-            ],
-            "description": "Command line flag parse library of the php",
-            "homepage": "https://github.com/php-toolkit/pflag",
-            "support": {
-                "issues": "https://github.com/php-toolkit/pflag/issues",
-                "source": "https://github.com/php-toolkit/pflag/tree/v2.0.6"
-            },
-            "time": "2022-11-05T13:50:01+00:00"
-        },
-        {
-            "name": "toolkit/stdlib",
-            "version": "v2.0.12",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-toolkit/stdlib.git",
-                "reference": "ebcac8bf315e1f05c0db80ac1bd22b457ffcdd81"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-toolkit/stdlib/zipball/ebcac8bf315e1f05c0db80ac1bd22b457ffcdd81",
-                "reference": "ebcac8bf315e1f05c0db80ac1bd22b457ffcdd81",
-                "shasum": ""
-            },
-            "require": {
-                "ext-mbstring": "*",
-                "php": ">=8.0"
-            },
-            "require-dev": {
-                "psr/container": "^2.0"
-            },
-            "suggest": {
-                "inhere/php-validate": "Very lightweight data validate tool"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/func.php"
-                ],
-                "psr-4": {
-                    "Toolkit\\Stdlib\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "https://github.com/inhere/"
-                }
-            ],
-            "description": "some stdlib tool library of the php",
-            "homepage": "https://github.com/php-toolkit/stdlib",
-            "keywords": [
-                "array",
-                "library",
-                "object",
-                "php",
-                "string",
-                "tool"
-            ],
-            "support": {
-                "issues": "https://github.com/php-toolkit/stdlib/issues",
-                "source": "https://github.com/php-toolkit/stdlib/tree/v2.0.12"
-            },
-            "time": "2024-02-08T05:30:58+00:00"
-        },
-        {
-            "name": "toolkit/sys-utils",
-            "version": "v2.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-toolkit/sys-utils.git",
-                "reference": "e9fd416502c34d4cf7014693c2bb87cc7e048817"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-toolkit/sys-utils/zipball/e9fd416502c34d4cf7014693c2bb87cc7e048817",
-                "reference": "e9fd416502c34d4cf7014693c2bb87cc7e048817",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">8.0.0",
-                "toolkit/stdlib": "~2.0"
-            },
-            "suggest": {
-                "inhere/console": "a lightweight php console application library.",
-                "toolkit/cli-utils": "useful cli tool library of the php"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Toolkit\\Sys\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "https://github.com/inhere"
-                }
-            ],
-            "description": "some system tool library of the php",
-            "homepage": "https://github.com/php-toolkit/sys-utils",
-            "keywords": [
-                "library",
-                "php",
-                "system",
-                "tool"
-            ],
-            "support": {
-                "issues": "https://github.com/php-toolkit/sys-utils/issues",
-                "source": "https://github.com/php-toolkit/sys-utils/tree/v2.0.5"
-            },
-            "time": "2022-12-02T06:16:07+00:00"
         },
         {
             "name": "webmozart/assert",

@@ -22,7 +22,7 @@
   "require": {
     "php": "^8.0",
     "guzzlehttp/guzzle": "^7.5",
-    "sebastian/diff": "^6.0",
+    "sebastian/diff": "^5.1.1",
     "inhere/console": "^4.1"
   },
   "require-dev": {
