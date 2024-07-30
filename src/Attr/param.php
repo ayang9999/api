@@ -10,7 +10,8 @@ class param
         public string $name,
         public string $type,
         public string $desc,
-        public bool $must = false,
+        public bool   $must = false,
+        public mixed  $value = null,
     )
     {
     }
