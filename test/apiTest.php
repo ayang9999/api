@@ -10,6 +10,15 @@ if (is_dir($dir)) {
     exit();
 }
 
+beforeAll(function () use ($dir) {
+//    rmdir($dir);
+
+});
+
+beforeEach(function () {
+
+});
+
 it("文档列表", function () use ($dir) {
 
 

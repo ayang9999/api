@@ -27,7 +27,8 @@
   },
   "require-dev": {
     "pestphp/pest": "^2.30",
-    "mockery/mockery": "^1.6"
+    "mockery/mockery": "^1.6",
+    "phpunit/php-code-coverage": "^10.1"
   },
   "autoload": {
     "psr-4": {

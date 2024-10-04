@@ -4,14 +4,18 @@ namespace Ayang\ApiManager\Test\example;
 
 
 use Ayang\ApiManager\Attr\api;
+use Ayang\ApiManager\Attr\apiPrefix;
+use Ayang\ApiManager\Attr\middleware;
 use Ayang\ApiManager\Attr\param;
 use Ayang\ApiManager\Attr\request;
 use Ayang\ApiManager\Attr\response;
 use Ayang\ApiManager\Attr\respField;
-
+use Ayang\ApiManager\Attr\fullUrl;
+#[apiPrefix('/user')]
 class userController
 {
     #[api(name:"获取用户信息", path: "/get", method: "get", desc: "返回参考保存用户信息字段", category: "用户信息")]
+    #[middleware(['check_login'])]
     #[respField("real_status", "bool", "实名认证 0未提交1审核中2通过3拒绝")]
     #[respField("education_status", "bool", "学历认证 0未提交1审核中2通过3拒绝")]
     #[respField("work_status", "bool", "company认证 0未提交1审核中2通过3拒绝")]
@@ -23,6 +27,8 @@ class userController
     }
 
     #[api(name:"保存用户信息", path: "/save", method: "post", desc: "", category: "用户信息")]
+    #[middleware(['check_login'])]
+    #[fullUrl("/save")]
     #[param("head_img", "string", "", )]
     #[param("sex", "string", "m男f女null未知", )]
     #[param("birthday", "string", "", )]
@@ -94,6 +100,7 @@ class userController
 
     #[api(name:"保存用户手机号", path: "/phone", method: "put", desc: "保存用户手机号", category: "用户信息")]
     #[param("code", "string", "code", )]
+    #[middleware(exclude_middlewares: ['check_login2'])]
     #[request(['code' => "f65ca51a3fe79fcccdbde3593ea8d5f09e66f1ad418b02a13b728656b5bf7839"], right: false)]
     public function getPhoneNumber()
     {
